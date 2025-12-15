@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light d-flex justify-content-between ps-5 pe-5">
+    <div>
+      <a class=" btn-tab-link fs-2" href="#">
+        <i class="bi bi-instagram"></i>
+        Instagram
+      </a>
+    </div>
+    <div class="d-flex">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a new post
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Caption</label>
+                <input type="text" class="form-control" id="formGroupExampleInput"
+                  placeholder="Add the caption of your post here">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-gear-fill"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav nav-tabs d-flex justify-content-center">
+    <button type="button" class="btn-tab-link fs-5" id="tab-grid" data-bs-toggle="tab" data-bs-target="#view-grid"
+      aria-controls="viewgrid" aria-selected="true">
+      <i class="bi bi-dice-6-fill"></i>
+    </button>
+    <button type="button" class="btn-tab-link fs-5" id="tab-column" data-bs-toggle="tab" data-bs-target="#view-column"
+      aria-controls="viewcolumn" aria-selected="false">
+      <i class="bi bi-dice-1-fill"></i>
+    </button>
+  </nav>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active d-flex justify-content-center flex-column" id="view-grid" role="tabpanel"
+      aria-labelledby="tab-grid" tabindex="0">
+      <section class="row mt-4 mx-300">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+      </section>
+      <section class="row mt-4 mx-300">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+      </section>
+      <section class="row mt-4 mx-300">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+        <img class="col-4" src="/img/lobo.webp" alt="Imagen de lobo">
+      </section>
+    </div>
+    <div class="tab-pane fade show" id="view-column" role="tabpanel" aria-labelledby="tab-column" tabindex="0">
+      <section class="row d-flex justify-content-center flex-column align-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="/img/lobo.webp" class="card-img-top" alt="Imagen lobo">
+          <div class="card-body">
+            <h5 class="card-title">Canis Lupus</h5>
+            <p class="card-text">Sé como el lobo y el león, ten un gran corazón y el poder del liderazgo.</p>
+            <a href="#" class="btn btn-danger placeholder-glow">Continuar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/img/lobo.webp" class="card-img-top" alt="Imagen lobo">
+          <div class="card-body">
+            <h5 class="card-title">Canis Lupus</h5>
+            <p class="card-text"> Solidario en la manada y fuerte en la soledad.</p>
+            <a href="#" class="btn btn-warning">Continuar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/img/lobo.webp" class="card-img-top" alt="Imagen lobo">
+          <div class="card-body">
+            <h5 class="card-title">Canis Lupus</h5>
+            <p class="card-text">Son inquisitivos, resistentes, fuertes. Son muy intuitivos. Sin embargo, son acosados,
+              e imputados falsamente de ser devoradores y en exceso agresivos. </p>
+            <a href="#" class="btn btn-light btn-tab-link">Continuar</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
