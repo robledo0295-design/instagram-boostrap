@@ -1,13 +1,33 @@
-.btn-tab-link{
- background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
- background-clip: text;
- color: transparent;
- border:0;
+.btn-tab-link {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  color: transparent;
+  border: 0;
 }
-.mx-300{
-    margin: 0 300px;
+.mx-300 {
+  margin: 0 300px;
 }
 body {
-    width: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
+}
+.btn-pink {
+  background-color: #8d5a7ca4 !important;
+  border-color: #97457d;
+  display: flex;
+  justify-content: center;
+}
+img {
+  border-radius: 15px;
+}
+.card {
+  background-color: #af98a0d1;
+  border-color: #d6249f;
 }
